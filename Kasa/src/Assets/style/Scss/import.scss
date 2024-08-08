@@ -1,0 +1,23 @@
+// Template Base
+@import "@/Assets/style/Scss/Template/Template.scss";
+
+// Utils
+@import "@/Assets/style/Scss/Utils/_Variables.scss";
+@import "@/Assets/style/Scss/Utils/Fonts.scss";
+@import "@/Assets/style/Scss/Utils/Keyframes.scss";
+@import "@/Assets/style/Scss/Utils/Mixins.scss";
+@import "@/Assets/style/Scss/Utils/Placeholders.scss";
+
+// Layouts
+@import "@/Assets/style/Scss/Layout/Header.scss";
+@import "@/Assets/style/Scss/Layout/Footer.scss";
+
+// Components
+@import "@/Assets/style/Scss/Components/Card.scss";
+@import "@/Assets/style/Scss/Components/Banner.scss";
+
+// Pages
+@import "@/Assets/style/Scss/Pages/About.scss";
+@import "@/Assets/style/Scss/Pages/Home.scss";
+@import "@/Assets/style/Scss/Pages/Logement.scss";
+@import "@/Assets/style/Scss/Pages/404error.scss";
