@@ -1,0 +1,37 @@
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.Header {
+    width: 90%;
+    margin: auto;
+
+    nav {
+
+        display: flex;
+        justify-content: space-between;
+        font-weight: 500;
+
+        ul {
+            display: flex;
+            gap: 20PX;
+            list-style: none;
+            margin: 0px;
+            align-items: center;
+
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+
+        }
+    }
+
+}

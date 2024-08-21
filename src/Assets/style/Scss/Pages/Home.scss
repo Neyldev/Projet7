@@ -1,0 +1,12 @@
+.CardList {
+    width: 83%;
+    margin: auto;
+    background-color: $gray;
+    border-radius: 40px;
+    padding: 40px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    grid-gap: 30px;
+}

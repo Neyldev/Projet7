@@ -1,0 +1,28 @@
+@keyframes DropdownSlide {
+    from {
+        transform: translateY(-0.8em);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0em);
+        opacity: 1;
+    }
+}
+
+
+.dropdown-text {
+    animation: DropdownSlide 0.5s;
+}
+
+
+.Btn-dropdown {
+    transform: rotate(0deg);
+    transition: transform 0.5s;
+
+}
+
+
+.Btn-dropdown.rotated {
+    transform: rotate(-180deg);
+}
