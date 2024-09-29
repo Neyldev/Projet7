@@ -1,17 +1,22 @@
 @keyframes DropdownSlide {
-    from {
+    0% {
         transform: translateY(-0.8em);
         opacity: 0;
     }
 
-    to {
+    35% {
+        opacity: 0;
+    }
+
+    100% {
         transform: translateY(0em);
         opacity: 1;
     }
 }
 
 
-.dropdown-text {
+.dropdown-text,
+.dropdown-ul {
     animation: DropdownSlide 0.5s;
 }
 

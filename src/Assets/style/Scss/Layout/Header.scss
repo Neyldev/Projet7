@@ -1,11 +1,12 @@
 * {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 
 .Header {
     width: 90%;
     margin: auto;
+    padding: 30px 0 0 0;
 
     nav {
 
@@ -13,10 +14,17 @@
         justify-content: space-between;
         font-weight: 500;
 
+        @media (max-width: 500px) {
+            img {
+                width: 50%;
+            }
+        }
+
         ul {
             display: flex;
             gap: 20PX;
             list-style: none;
+            padding: 0px;
             margin: 0px;
             align-items: center;
 
@@ -24,6 +32,15 @@
             a {
                 text-decoration: none;
                 color: black;
+                font-size: 24px;
+
+                @media (max-width: $mediaSmallDesktop) {
+                    font-size: 18px;
+                }
+
+                @media (max-width: $mediaMobile) {
+                    font-size: 12px;
+                }
             }
 
             a:hover {

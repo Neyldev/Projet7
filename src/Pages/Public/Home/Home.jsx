@@ -5,26 +5,29 @@ import Banner from '@/Components/Banner';
 import Card from '@/Components/Card';
 
 // import img en local
-import HomeBanner from '@/Assets/Img/HomeBanner.png'; ''
+import HomeBanner from '@/Assets/Img/HomeBanner.png';
 
 // Importation du fichier JSON
-import data from '@/Assets/Api/Logement.json';; // Chemin du fichier JSON
+import LogementService from '@/_Services/Logement.service';
 
 const Home = () => {
     return (
-        <div>
+        <section>
             <Banner imgSrc={HomeBanner} content="Chez vous, partout et ailleurs" />
 
-            <section className='CardList'>
-                {data.map(item => (
-                    <Card
-                        id={item.id}
-                        title={item.title}
-                        cover={item.cover}
-                    />
-                ))}
-            </section>
-        </div>
+            <ul className='CardList'>
+                {
+                    LogementService.GetAllLogement().map(item => (
+                        <Card
+                            key={item.id}
+                            id={item.id}
+                            title={item.title}
+                            cover={item.cover}
+                        />
+                    ))
+                }
+            </ul>
+        </section>
     );
 };
 

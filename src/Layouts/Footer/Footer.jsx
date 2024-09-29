@@ -1,7 +1,4 @@
 import React from 'react';
-
-
-
 import logoF from '@/Assets/Img/LOGOFooter.png';
 
 const Footer = () => {

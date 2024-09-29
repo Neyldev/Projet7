@@ -1,0 +1,53 @@
+.Carrousel {
+
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .CarrouselImg {
+        height: 415px;
+        border-radius: 25px;
+        object-fit: cover;
+        width: 100%;
+
+        @media (max-width: $mediaMobile) {
+            height: 255px;
+
+        }
+    }
+
+    i {
+        position: absolute;
+        z-index: 1;
+        color: white;
+        font-size: 65px;
+        cursor: pointer;
+
+
+        @media (max-width: $mediaSmallDesktop) {
+            font-size: 45px
+        }
+
+        @media (max-width: $mediaMobile) {
+            font-size: 25px
+        }
+
+
+        &.fa-chevron-left {
+            left: 10px;
+        }
+
+        &.fa-chevron-right {
+            right: 10px;
+        }
+    }
+
+    p {
+        position: absolute;
+        bottom: 10px;
+        color: white;
+    }
+}

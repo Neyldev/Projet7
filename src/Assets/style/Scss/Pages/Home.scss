@@ -1,12 +1,22 @@
 .CardList {
-    width: 83%;
     margin: auto;
     background-color: $gray;
     border-radius: 40px;
-    padding: 40px;
+    padding: 30px;
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     grid-gap: 30px;
+
+    @media (max-width: $mediaSmallDesktop) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: $mediaMobile) {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0px;
+        background-color: white;
+    }
+
 }

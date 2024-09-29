@@ -1,34 +1,33 @@
 import React from 'react';
+
 import Dropdown from '@/Components/Dropdown';
+import Banner from '@/Components/Banner';
 
 import AboutBanner from '@/Assets/Img/AboutBanner.png';
 
-import Banner from '@/Components/Banner';
+import AboutList from "@/Assets/Api/about.json";
+
 
 const About = () => {
 
     return (
-        <div className="About">
+        <section className="About">
 
-            <Banner imgSrc={AboutBanner} />
+            <Banner imgSrc={AboutBanner} content="" />
 
-            <Dropdown
-                title="Fiabilité"
-                content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."
-            />
-            <Dropdown
-                title="Respect"
-                content="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."
-            />
-            <Dropdown
-                title="Service"
-                content="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."
-            />
-            <Dropdown
-                title="Sécurité"
-                content="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
-            />
-        </div>
+            <ul>
+                {
+                    AboutList.map((dropdown) =>
+                        <Dropdown
+                            key={dropdown.id}
+                            title={dropdown.title}
+                            content={dropdown.content}
+                            liste={false}
+                        />
+                    )
+                }
+            </ul>
+        </section>
     );
 };
 

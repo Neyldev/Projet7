@@ -1,9 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 
-
 import logo from '@/Assets/Img/LOGO.png';
-
 
 const Header = () => {
     return (

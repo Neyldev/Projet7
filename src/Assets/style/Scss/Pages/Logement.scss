@@ -1,0 +1,188 @@
+.LogementTitleHost {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .LogementTitle {
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            font-weight: 500;
+            color: $red;
+            font-size: 36px;
+            margin: 0;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 0;
+            font-weight: 500;
+        }
+    }
+
+    .LogementHost {
+        display: flex;
+        gap: 10px;
+
+        p {
+
+            font-weight: bold;
+            color: $red;
+            font-size: 18px;
+            width: 50%;
+            text-align: end;
+            margin: auto;
+
+        }
+
+        img {
+            border-radius: 50%;
+            width: 64px;
+            height: 64px;
+        }
+
+    }
+}
+
+.LogementTagRating {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+// .détails {
+//     display: flex;
+//     gap: 5%;
+//     padding: 0;
+// }
+
+
+//////////////////////////////////////////////////////////////
+
+.LogementInfo {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 16px;
+    align-items: center;
+    grid-column-gap: 3px;
+}
+
+.LogementTitle {
+    grid-row: 1;
+
+    // grid-column: 1 / -1;
+
+    h1 {
+        color: $red;
+        margin: 0;
+        font-size: 36px;
+
+        @media (max-width: $mediaSmallDesktop) {
+            font-size: 26px
+        }
+
+        @media (max-width: $mediaMobile) {
+            font-size: 18px
+        }
+    }
+
+    p {
+        font-size: 18px;
+        margin: 0;
+        font-weight: 500;
+
+        @media (max-width: $mediaSmallDesktop) {
+            font-size: 13px
+        }
+
+    }
+}
+
+.tags-container {
+    grid-column: 1 / 2;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+
+    @media (max-width: $mediaMobile) {
+        grid-row: 2;
+    }
+
+    .tag {
+        @media (max-width: $mediaSmallDesktop) {
+            font-size: 13px
+        }
+
+        @media (max-width: $mediaMobile) {
+            font-size: 12px
+        }
+    }
+}
+
+.rating {
+    grid-column: 2 / 3;
+    justify-self: end;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: $mediaMobile) {
+        justify-self: start;
+        grid-row: 3;
+        grid-column: 1 / 3;
+    }
+
+    img {
+        width: 24px;
+        height: 24px;
+
+        @media (max-width: $mediaMobile) {
+            width: 17px;
+            height: 17px;
+        }
+
+    }
+}
+
+.LogementHost {
+
+    grid-row: 1;
+    grid-column: 2 / 3;
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    @media (max-width: $mediaMobile) {
+        justify-self: end;
+        grid-row: 3;
+        grid-column: 1 / 3;
+    }
+
+    p {
+        color: $red;
+        margin: 0;
+        font-size: 18px;
+        text-align: right;
+
+    }
+
+    .avatar {
+        border-radius: 50%;
+        width: 64px;
+        height: 64px;
+    }
+}
+
+.détails {
+    display: flex;
+    gap: 5%;
+    padding: 0;
+
+    @media (max-width: $mediaMobile) {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+}
