@@ -4,7 +4,6 @@ import { useNavigate, useParams } from 'react-router-dom';
 import LogementService from "@/_Services/Logement.service";
 import Tag from '@/Components/Tag';
 import Rating from '@/Components/Rating.Jsx';
-import Equipement from '@/Components/Equipement.Jsx';
 import Dropdown from '@/Components/Dropdown.Jsx';
 import Carrousel from '@/Components/Carrousel';
 
@@ -24,7 +23,6 @@ const Logement = () => {
 
     useEffect(() => {
         getInfo();
-
     }, [id])
 
     const getInfo = async () => {

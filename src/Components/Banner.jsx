@@ -3,7 +3,7 @@ import React from 'react';
 const Banner = ({ imgSrc, content }) => {
     return (
         <div className='Banner'>
-            <img src={imgSrc} alt="Logo About" className='AboutImg' />
+            <img src={imgSrc} alt="Paysage" className='AboutImg' />
             <p className='BannerText'>
                 {content}
             </p>
