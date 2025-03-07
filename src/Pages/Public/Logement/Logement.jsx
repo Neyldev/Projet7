@@ -3,9 +3,9 @@ import { useNavigate, useParams } from 'react-router-dom';
 
 import LogementService from "@/_Services/Logement.service";
 import Tag from '@/Components/Tag';
-import Rating from '@/Components/Rating.Jsx';
-import Dropdown from '@/Components/Dropdown.Jsx';
-import Carrousel from '@/Components/Carrousel';
+import Rating from '@/Components/Rating.jsx';
+import Dropdown from '@/Components/Dropdown.jsx';
+import Carrousel from '@/Components/Carrousel.jsx';
 
 
 
